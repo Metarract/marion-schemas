@@ -34,11 +34,9 @@
               "type": "number"
             },
             "baseImage": {
-              "description": "Path to image used while not speaking",
               "$ref": "#/$defs/image"
             },
             "activeImage": {
-              "description": "Path to image used while actively speaking",
               "$ref": "#/$defs/image"
             }
           },
