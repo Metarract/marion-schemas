@@ -34,12 +34,10 @@
               "type": "number"
             },
             "baseImage": {
-              "type": "object",
               "description": "Path to image used while not speaking",
               "$ref": "#/$defs/image"
             },
             "activeImage": {
-              "type": "object",
               "description": "Path to image used while actively speaking",
               "$ref": "#/$defs/image"
             }
@@ -53,22 +51,22 @@
         }
       ],
       "minItems": 1
-    },
-    "$defs": {
-      "image": {
-        "type": "object",
-        "properties": {
-          "animated": {
-            "type": "boolean"
-          },
-          "path": {
-            "type": "string"
-          }
+    }
+  },
+  "$defs": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "animated": {
+          "type": "boolean"
         },
-        "required": [
-          "path"
-        ]
-      }
+        "path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path"
+      ]
     }
   },
   "required": [
